@@ -308,7 +308,6 @@ hr.major {
 
 blockquote {
   border-left: solid 8px #e4e4e4;
-  font-style: italic;
   margin: 0 0 2.25em 0;
   padding: 0.5em 0 0.5em 2em;
 }
@@ -1820,8 +1819,8 @@ pre code {
 }
 
 .Certificate {
-  border-top: 2px solid #f4f4f4;
-  border-bottom: 2px solid #f4f4f4;
+  border-top: solid 3px #f4f4f4;
+  border-bottom: solid 3px #f4f4f4;
 }
 
 .container.xsmall {
@@ -1857,6 +1856,10 @@ pre code {
 @media screen and (max-width: 480px) {
   .container {
     max-width: calc(100% - 3.375em);
+  }
+
+  #main>#one>.container.career {
+    margin-top: 1em;
   }
 }
 
@@ -3126,12 +3129,23 @@ input[type="button"]:disabled,
 }
 
 #main>section>.container {
-  padding: 6em 0 1em 0;
+  padding: 3em 0 3em 0;
 }
 
 #main>section:first-child {
   border-top: 0;
 }
+
+.container blockquote span {
+  font-size: 0.7em;
+  color: #ccc;
+}
+
+#main>section>.container.career {
+  padding-top: 0em;
+  padding-bottom: 2em;
+}
+
 
 /* Footer */
 
@@ -3429,6 +3443,30 @@ input[type="button"]:disabled,
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
+  .graph {
+    height: 32px;
+    background: #fff;
+    border-radius: 7px;
+  }
+
+  .graph:last-child {
+    padding-bottom: 1em;
+  }
+
+  .graph span {
+    display: block;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 28px;
+    text-align: right;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 12pt;
+  }
 }
 
 /* Small 미디어 스몰사이즈 */
@@ -3582,6 +3620,8 @@ input[type="button"]:disabled,
     -ms-transform: translateX(-17em);
     transform: translateX(-17em);
   }
+
+
 }
 
 /* XSmall 미디어 엑스스몰 */
@@ -3681,13 +3721,13 @@ input[type="button"]:disabled,
   }
 
   #main>section>.container {
-    padding: 2em 0 3em 0;
+    padding: 2em 0 2em 0;
   }
 
   .graph {
-    height: 40px;
+    height: 25px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 7px;
   }
 
   .graph:last-child {
@@ -3697,14 +3737,14 @@ input[type="button"]:disabled,
   .graph span {
     display: block;
     padding: 0 10px;
-    height: 40px;
-    line-height: 40px;
+    height: 25px;
+    line-height: 25px;
     text-align: right;
-    border-radius: 10px;
+    border-radius: 7px;
     box-sizing: border-box;
     color: #fff;
     margin: 15px 0;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 11pt;
   }
 }

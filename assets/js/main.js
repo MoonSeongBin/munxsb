@@ -158,7 +158,7 @@
 	var jbOffset = $('.skill_container').offset();
 	/*선택자는 본인 구조에 맞게 수정*/
 	$(window).scroll(function () {
-		if ($(document).scrollTop() > 650) {//여기 지정된 길이 이후부터 적용됩니다
+		if ($(document).scrollTop() > 750) {//여기 지정된 길이 이후부터 적용됩니다
 			$('.skill_container div:nth-child(2)').addClass("stack");
 			$('.skill_container div:nth-child(3)').addClass("stack2");
 			$('.skill_container div:nth-child(4)').addClass("stack3");
